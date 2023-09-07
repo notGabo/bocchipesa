@@ -97,8 +97,9 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
         cooldowns[user] = now;
         console.log(`@${user.username} ${juegos[game.name]} ${insultos[Math.floor(Math.random() * maxInsultos)]}`);
         channel.send(`<@${user.id}> ${juegos[game.name]} ${insultos[Math.floor(Math.random() * maxInsultos)]}`);
-
     }
 });
+
+console.log("holaaa")
 
 client.login(token);
